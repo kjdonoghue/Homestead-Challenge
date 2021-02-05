@@ -1,2 +1,2 @@
-//when you can, jam, or freeze item
+//when you can, jam, or freeze items
 //maybe inventory??
