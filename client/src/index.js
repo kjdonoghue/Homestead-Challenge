@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import BaseLayout from './components/BaseLayout'
+import VegetableTracker from './components/VegetableTracker'
+import PerennialTracker from './components/PerrenialTracker'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 
@@ -11,6 +14,8 @@ ReactDOM.render(
       <Switch>
         <BaseLayout>
           <Route component={App} path='/' exact />
+          <Route component={VegetableTracker} path='/vegetables' />
+          <Route component={PerennialTracker} path='/perennials' />
         </BaseLayout>
       </Switch>
     </BrowserRouter>

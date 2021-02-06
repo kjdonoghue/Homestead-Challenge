@@ -1,12 +1,13 @@
-
+import {NavLink} from 'react-router-dom'
 
 function Menu() {
 
 
     return(
         <div>
-            <h1>Menu</h1>
-       
+            <NavLink to="/"> Home </NavLink>
+            <NavLink to="/vegetables"> Vegetables </NavLink>
+            <NavLink to="/perennials"> Perennials </NavLink>
         </div>
     )
 }

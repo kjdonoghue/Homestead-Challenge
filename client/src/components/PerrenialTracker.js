@@ -35,24 +35,18 @@ const rows = [
 ];
 
 
-function VegetableTracker() {
+
+function PerennialTracker() {
 
 
-    return (
+    return(
         <div>
-            <h1>Vegetable Tracker</h1>
-            <div style={{ height: 400, width: '100%' }}>
+        <h1>Perennials</h1>
+        <div style={{ height: 400, width: '100%' }}>
                 <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
             </div>
-
-
-
-
-
-
-
         </div>
     )
 }
 
-export default VegetableTracker
+export default PerennialTracker
