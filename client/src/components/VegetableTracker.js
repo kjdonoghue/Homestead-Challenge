@@ -3,23 +3,17 @@ import { DataGrid } from '@material-ui/data-grid';
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'firstName', headerName: 'First name', width: 130 },
-    { field: 'lastName', headerName: 'Last name', width: 130 },
-    {
-        field: 'age',
-        headerName: 'Age',
-        type: 'number',
-        width: 90,
-    },
-    {
-        field: 'fullName',
-        headerName: 'Full name',
-        description: 'This column has a value getter and is not sortable.',
-        sortable: false,
-        width: 160,
-        valueGetter: (params) =>
-            `${params.getValue('firstName') || ''} ${params.getValue('lastName') || ''}`,
-    },
+    { field: 'variety', headerName: 'Variety', width: 130 },
+    { field: 'family', headerName: 'Family', width: 130 },
+    { field: 'started_from', headerName: 'Started From', width: 130 },
+    { field: 'start_date', headerName: 'Date Planted', width: 130 },
+    { field: 'first_harvest', headerName: 'First Harvest', width: 130 },
+    { field: 'last_harvest', headerName: 'Last Harvest', width: 130 },
+    { field: 'harvest_amount', headerName: 'Total Harvest', width: 130 },
+    { field: 'vendor', headerName: 'Vendor', width: 130 },
+    { field: 'cost', headerName: 'Cost', width: 130 },    
+    { field: 'notes', headerName: 'Notes', width: 130 },
+  
 ];
 
 const rows = [
